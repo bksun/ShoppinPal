@@ -1,0 +1,28 @@
+<nav id="test" class="navbar navbar-expand-lg navbar-dark bg-company-red">
+  <a class="navbar-brand" routerLink="/home"><img src="/src/app/img/MTPLlogo.jpg" ></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link mylink" routerLink="/home"  data-toggle="collapse"
+          routerLinkActive="active-link">Home</a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="nav-link mylink"  routerLink="#"  onclick="
+          document.getElementById('signup').style.display='block'" style="width:auto;"  routerLinkActive="active-link">Sign Up</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link mylink"  routerLink="#" onclick="document.getElementById('login').style.display='block'" style="width:auto;" routerLinkActive="active-link">Log In</a>
+    </li>
+
+  </ul>
+  </div>
+</nav>
+
+<app-login></app-login>
+<app-signup></app-signup>

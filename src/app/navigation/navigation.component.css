@@ -1,0 +1,50 @@
+.nav-item .nav-link .active-link {
+  color: black;
+}
+
+.bg-company-red {
+  background-color: rgb(97, 97, 192);
+  padding-top: 10px;
+  padding-bottom: 3px;
+}
+
+.navbar-nav .nav-item .input-group-append button {
+  border: 1px solid white;
+  font: bold 18px Arial,Helvetica,Sans-serif;
+  color: #bebebe;
+  height: 45px;
+  padding-left: 18px;
+  padding-right: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  background: white;
+}
+ .nav-item .nav-link {
+  color:white;
+  padding: 15px;
+  font: bold 18px Arial,Helvetica,Sans-serif;
+}
+
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar .navbar-brand {
+  font: bold 25px Arial,Helvetica,Sans-serif;
+}
+
+.navbar-nav .nav-item .active-link {
+color: rgb(143, 204, 143);
+background:transparent;
+}
+
+.navbar-nav .nav-item:hover {
+  background: rgb(107, 141, 235);
+}
