@@ -1,27 +1,20 @@
-<div id="signup" class="modal">
+<form (submit)="onAddPost(postForm)" #postForm="ngForm" >
+    <mat-card>
+      <mat-form-field>
+        <input matInput type="text" name = "title" placeholder="Write Title" ngModel required #title="ngModel">
+        <mat-error *ngIf="title.invalid"> Please Wirte Title</mat-error>
+      </mat-form-field>
 
-  <form class="modal-content animate" action="/sunil">
+      <mat-form-field>
+        <textarea rows="4" matInput type="text" name = "content" placeholder="Write Post" ngModel required #content="ngModel">  </textarea>
+        <mat-error *ngIf="content.invalid"> Please Wirte Post</mat-error>
+      </mat-form-field>
 
-    <span onclick="document.getElementById('signup').style.display='none';
-                    " class="close"
-    title="Close Sign Up">&times;</span>
+    <br><br>
 
-    <div class="container">
-      <h1>Please Sign Up</h1>
-      <hr>
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+    <button mat-raised-button type="submit" color="accent"> Save post</button>
+      &nbsp;&nbsp;&nbsp;
+    <button mat-raised-button type="reset" color="warn"> Reset</button>
 
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('signup').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
-      </div>
-    </div>
-  </form>
-</div>
-
+    </mat-card>
+    </form>
